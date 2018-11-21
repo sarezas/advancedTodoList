@@ -121,7 +121,7 @@ function removeTaskFromLocSto(taskItem){
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// clear al tasks
+// clear all tasks
 function clearTasks(){
     // simpler
     // taskList.innerHTML = '';
