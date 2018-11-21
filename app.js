@@ -137,7 +137,7 @@ function clearTasks(){
 // filter tasks
 function filterTasks(e){
     const text = e.target.value.toLowerCase();
-    // select all lis; query selector all return a node list so we can loop through it
+    // select all lis; query-selector-all returns a node list so we can loop through it
     // indexof() returns the first match within an array, if no match returns -1
     document.querySelectorAll('.collection-item').forEach(function(task){
         const item = task.firstChild.textContent;
