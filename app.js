@@ -25,11 +25,9 @@ function loadEventListeners(){
 // get tasks from LocSto
 function getTasks(){
     let tasks;
-    // if LocSto is empty, tasks becomes an array
     if(localStorage.getItem('tasks') === null) {
         tasks = [];
     } else {
-        // LocSto only stores strings, so parse them to JSON
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
 
